@@ -147,8 +147,6 @@ body {
 /* MAIN */
 /* Pierwsza sekcja */
 .background-picture {
-    width: 1600px;
-    height: 600px;
     background-size: cover;
     background-image: url(/images/backgroundpicture.jpg);
 }
