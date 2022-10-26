@@ -91,6 +91,11 @@ body {
 .header-envelope:hover {
     --color2: #2196f3;
 }
+
+.header-mobile:hover {
+    --color4: #2196f3;
+}
+
 .header-list-link {
     list-style: none;
     display: flex;
@@ -147,12 +152,16 @@ body {
 /* MAIN */
 /* Pierwsza sekcja */
 .background-picture {
-    background-size: cover;
-    background-image: url(/images/backgroundpicture.jpg);
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(255, 255, 255, 0.1)
+        ),
+        url(/images/backgroundpicture.jpg);
+    height: 600px;
 }
 
 .motto {
-    background-color: var(--bcg1-color);
+    background-color: transparent;
 }
 .motto-text {
     font-weight: 900;
@@ -195,6 +204,19 @@ body {
 }
 
 /* Druga sekcja */
+.whole-lorem {
+    padding-top: 94px;
+}
+.icon-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f4fa;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
 
 .lorem-descrp {
     list-style: none;
@@ -203,7 +225,12 @@ body {
     gap: 30px;
     align-items: center;
 }
+.lorem-object {
+    display: block;
+    margin: 0 auto;
+}
 .lorem-title {
+    display: block;
     font-size: 14px;
     line-height: 1.42;
     letter-spacing: 0.03em;
@@ -266,6 +293,50 @@ body {
     padding-bottom: 30px;
 
     color: #757575;
+}
+.social-network {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.logo-sn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.logo-sn:hover {
+    cursor: pointer;
+    background-color: #2196f3;
+    --color1: var(--bcg2-color);
+}
+
+/* CLIENT */
+.clients {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.client-box {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+.client-box:hover {
+    border: 1px solid #2196f3;
+    border-radius: 4px;
+    --color1: var(--active-color);
+    --color2: var(--active-color);
 }
 
 /* FOOTER */
