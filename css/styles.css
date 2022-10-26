@@ -313,7 +313,7 @@ body {
 
 .logo-sn:hover {
     cursor: pointer;
-    background-color: #2196f3;
+    background-color: var(--active-color);
     --color1: var(--bcg2-color);
 }
 
@@ -333,6 +333,7 @@ body {
     border-radius: 4px;
 }
 .client-box:hover {
+    cursor: pointer;
     border: 1px solid #2196f3;
     border-radius: 4px;
     --color1: var(--active-color);
@@ -344,12 +345,22 @@ body {
 .footer {
     background-color: var(--bcg1-color);
 }
-
+.footer-all {
+    display: flex;
+    flex-direction: row;
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+}
 .logo-f {
+    display: block;
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
+    padding-top: 60px;
+    margin-bottom: 20px;
     text-decoration: none;
 
     color: var(--default-color);
@@ -396,7 +407,49 @@ body {
     color: var(--active-color);
     outline: none;
 }
+.box-join-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.join-us {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 72px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
 
+    color: #ffffff;
+    padding-left: 70px;
+    padding-bottom: 20px;
+}
+.social-network-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    padding-bottom: 100px;
+    padding-left: 70px;
+}
+.logo-sn-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    --color1: var(--bcg2-color);
+}
+.logo-sn-footer:hover {
+    cursor: pointer;
+    background-color: var(--active-color);
+    --color1: var(--bcg2-color);
+}
 /* druga strona */
 /* MAIN*/
 
@@ -458,6 +511,11 @@ body {
     flex-basis: calc((100% - 60px) / 3);
     background: #ffffff;
     width: 370px;
+}
+.info-block-two:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .borderline {
     border: 1px solid #eeeeee;
