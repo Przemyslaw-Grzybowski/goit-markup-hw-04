@@ -83,30 +83,6 @@ body {
     margin-bottom: 32px;
     gap: 46px;
 }
-
-.header-envelope {
-    fill: #757575;
-}
-
-.header-envelope:hover {
-    --color2: #2196f3;
-}
-
-.header-mobile:hover {
-    --color4: #2196f3;
-}
-
-.header-list-link {
-    list-style: none;
-    display: flex;
-    justify-items: flex-end;
-    flex-wrap: wrap;
-    padding-left: 0px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    gap: 50px;
-}
-
 .header-list:hover {
     cursor: pointer;
     color: var(--active-color);
@@ -131,7 +107,29 @@ body {
     outline: none;
 }
 
+.header-list-link {
+    list-style: none;
+    display: flex;
+    justify-items: flex-end;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    gap: 30px;
+}
+
+.header-envelope {
+    margin-right: 10px;
+}
+
+.header-mobile {
+    margin-right: 10px;
+}
+
 .header-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -139,9 +137,12 @@ body {
     text-decoration: none;
     color: #757575;
 }
+
 .header-contact:hover {
     cursor: pointer;
     color: var(--active-color);
+    --color4: var(--active-color);
+    --color2: var(--active-color);
 }
 
 .header-contact:focus {
@@ -157,11 +158,12 @@ body {
             rgba(255, 255, 255, 0.1)
         ),
         url(./../images/backgroundpicture.jpg);
-    height: 600px;
 }
 
 .motto {
     background-color: transparent;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .motto-text {
     font-weight: 900;
