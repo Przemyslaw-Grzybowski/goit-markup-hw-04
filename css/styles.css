@@ -118,10 +118,6 @@ body {
     gap: 30px;
 }
 
-.header-envelope {
-    margin-right: 10px;
-}
-
 .header-mobile {
     margin-right: 10px;
 }
@@ -141,13 +137,17 @@ body {
 .header-contact:hover {
     cursor: pointer;
     color: var(--active-color);
-    --color4: var(--active-color);
+    --color1: var(--active-color);
     --color2: var(--active-color);
 }
 
 .header-contact:focus {
     color: var(--active-color);
     outline: none;
+}
+
+.header-envelope {
+    margin-right: 10px;
 }
 
 /* MAIN */
@@ -317,10 +317,11 @@ body {
 .logo-sn:hover {
     cursor: pointer;
     background-color: var(--active-color);
-    --color1: var(--bcg2-color);
+    --color3: var(--bcg2-color);
 }
 
 /* CLIENT */
+
 .clients {
     list-style: none;
     display: flex;
@@ -339,7 +340,7 @@ body {
     cursor: pointer;
     border: 1px solid #2196f3;
     border-radius: 4px;
-    --color1: var(--active-color);
+    --color3: var(--active-color);
     --color2: var(--active-color);
 }
 
@@ -451,7 +452,7 @@ body {
 .logo-sn-footer:hover {
     cursor: pointer;
     background-color: var(--active-color);
-    --color1: var(--bcg2-color);
+    --color3: var(--bcg2-color);
 }
 /* druga strona */
 /* MAIN*/
